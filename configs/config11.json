@@ -1,0 +1,25 @@
+{
+    "generation": {
+        "force_last_unsched": true,
+        "N": 5,
+        "N_mk": 1,
+        "U": 0.94,
+        "T_min": 100,
+        "T_max": 10000,
+        "m": 3,
+        "k": 5,
+        "crit_sec_perc": 0
+    },
+    "analysis": {
+        "job_continue": true
+    },
+    "experiment": {
+        "sweep_parameter": "U",
+        "sweep_start": 0.8,
+        "sweep_end": 0.98,
+        "sweep_step": 0.02,
+        "num_tasksets": 500,
+        "reuse_tasksets": false,
+        "results_directory": "experiments/exp11-sweep-U-preempt"
+    }
+}

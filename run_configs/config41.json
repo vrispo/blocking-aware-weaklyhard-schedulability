@@ -1,0 +1,25 @@
+{
+    "generation": {
+        "force_last_unsched": true,
+        "N": 5,
+        "N_mk": 1,
+        "U": 0.6,
+        "T_min": 100,
+        "T_max": 10000,
+        "m": 3,
+        "k": 5,
+        "crit_sec_perc": 100
+    },
+    "analysis": {
+        "job_continue": true
+    },
+    "experiment": {
+        "sweep_parameter": "N_mk",
+        "sweep_start": 1,
+        "sweep_end": 5,
+        "sweep_step": 1,
+        "num_tasksets": 500,
+        "reuse_tasksets": false,
+        "results_directory": "experiments/exp41-sweep_n_mk_nonpreempt"
+    }
+}

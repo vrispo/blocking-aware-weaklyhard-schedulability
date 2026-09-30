@@ -1,0 +1,311 @@
+# Doxyfile for WeaklyHard Project
+# Configuration for automatic documentation generation using Doxygen
+# Generated documentation will be placed in the 'docs' directory
+
+#---------------------------------------------------------------------------
+# Project Configuration
+#---------------------------------------------------------------------------
+
+PROJECT_NAME           = "WeaklyHard"
+PROJECT_NUMBER         = "1.0"
+PROJECT_BRIEF          = "Real-Time Schedulability Analysis with Weakly-Hard Constraints"
+PROJECT_LOGO           = 
+OUTPUT_DIRECTORY       = ./docs
+CREATE_SUBDIRS         = NO
+ALLOW_UNICODE_NAMES    = YES
+
+#---------------------------------------------------------------------------
+# Build Configuration
+#---------------------------------------------------------------------------
+
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_PACKAGE        = NO
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = NO
+EXTRACT_ANON_NSPACES   = NO
+
+INPUT                  = .
+INPUT_ENCODING         = UTF-8
+FILE_PATTERNS          = *.h *.cpp *.md
+
+RECURSIVE              = NO
+EXCLUDE_PATTERNS       = */docs/* */.git/*
+EXCLUDE_SYMLINKS       = YES
+
+#---------------------------------------------------------------------------
+# Source Processing
+#---------------------------------------------------------------------------
+
+FILTER_SOURCE_FILES    = NO
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
+
+#---------------------------------------------------------------------------
+# Output Configuration
+#---------------------------------------------------------------------------
+
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+HTML_HEADER            = 
+HTML_FOOTER            = 
+HTML_STYLESHEET        = 
+HTML_EXTRA_STYLESHEET  = 
+HTML_COLORSTYLE_HUE    = 220
+HTML_COLORSTYLE_SAT    = 100
+HTML_COLORSTYLE_GAMMA  = 80
+HTML_TIMESTAMP         = YES
+HTML_DYNAMIC_SECTIONS  = YES
+HTML_INDEX_NUM_ENTRIES = 100
+
+GENERATE_LATEX         = NO
+LATEX_OUTPUT           = latex
+LATEX_CMD_NAME         = latex
+MAKEINDEX_CMD_NAME     = makeindex
+
+GENERATE_MAN           = NO
+MAN_OUTPUT             = man
+MAN_EXTENSION          = .3
+MAN_SUBDIR             = 
+
+GENERATE_XML           = NO
+XML_OUTPUT             = xml
+XML_SCHEMA             = 
+XML_DTD                = 
+
+GENERATE_DOCBOOK       = NO
+DOCBOOK_OUTPUT         = docbook
+DOCBOOK_PROGRAM_LISTING = YES
+
+#---------------------------------------------------------------------------
+# Language and Formatting
+#---------------------------------------------------------------------------
+
+OUTPUT_LANGUAGE        = English
+USE_WINDOWS_ENCODING   = NO
+BRIEF_MEMBER_DESC      = YES
+REPEAT_BRIEF           = YES
+ABBREVIATE_BRIEF       = "The $name class" \
+                         "The $name widget"
+
+ALWAYS_DETAILED_SEC    = NO
+INLINE_INHERITED_MEMB  = YES
+FULL_PATH_NAMES        = NO
+STRIP_FROM_PATH        = 
+STRIP_FROM_INC_PATH    = 
+
+SHORT_NAMES            = NO
+JAVADOC_AUTOBRIEF      = YES
+QT_AUTOBRIEF           = NO
+MARKDOWN_SUPPORT       = YES
+TOC_INCLUDE_HEADINGS   = 0
+AUTOLINK_SUPPORT       = YES
+BUILTIN_STL_SUPPORT    = NO
+CPP_CLI_SUPPORT        = NO
+SIP_SUPPORT            = NO
+IDL_SUPPORT            = NO
+DISTRIBUTE_GROUP_DOC   = NO
+
+#---------------------------------------------------------------------------
+# Documentation Comments
+#---------------------------------------------------------------------------
+
+ENABLED_SECTIONS       = 
+MAX_INITIALIZERS       = 30
+SHOW_COMPOUND_MEMBERS  = YES
+SHOW_FILES             = YES
+SHOW_NAMESPACES        = YES
+FILE_VERSION_FILTER    = 
+
+#---------------------------------------------------------------------------
+# Sections and Groups
+#---------------------------------------------------------------------------
+
+SHOW_INCLUDE_FILES     = YES
+SHOW_INCLUDED_FILES    = YES
+SHOW_GROUPED_MEMBERS_INC = NO
+FORCE_LOCAL_RANGE      = NO
+LAYOUT_FILE            = 
+
+#---------------------------------------------------------------------------
+# Alphabetical Index
+#---------------------------------------------------------------------------
+
+ALPHABETICAL_INDEX     = YES
+COLS_IN_ALPHA_INDEX    = 5
+IGNORE_PREFIX          = 
+
+#---------------------------------------------------------------------------
+# General Appearance
+#---------------------------------------------------------------------------
+
+DISABLE_INDEX          = NO
+GENERATE_TREEVIEW      = YES
+TREEVIEW_WIDTH         = 250
+EXT_LINKS_IN_WINDOW    = NO
+FORMULA_FONTSIZE       = 10
+FORMULA_TRANSPARENT    = YES
+USE_MATHJAX            = NO
+MATHJAX_FORMAT         = HTML-CSS
+MATHJAX_RELPATH        = https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/
+
+#---------------------------------------------------------------------------
+# Search Configuration
+#---------------------------------------------------------------------------
+
+SEARCHENGINE           = YES
+SERVER_BASED_SEARCH    = NO
+EXTERNAL_SEARCH        = NO
+EXTERNAL_SEARCH_ID     = 
+EXTRA_SEARCH_MAPPINGS  = 
+
+#---------------------------------------------------------------------------
+# External References
+#---------------------------------------------------------------------------
+
+GENERATE_BUGLIST       = YES
+GENERATE_DEPRECATEDLIST = YES
+GENERATE_TODOLIST      = YES
+GENERATE_TESTLIST      = YES
+GENERATE_AUTOGEN_DEF   = NO
+
+#---------------------------------------------------------------------------
+# Collaboration Diagrams
+#---------------------------------------------------------------------------
+
+COLLABORATION_GRAPH    = YES
+GROUP_GRAPHS           = YES
+UML_LOOK               = YES
+UML_LIMIT_NUM_FIELDS   = 10
+TEMPLATE_RELATIONS     = NO
+INCLUDE_GRAPH          = YES
+INCLUDED_BY_GRAPH      = YES
+CALL_GRAPH             = NO
+CALLER_GRAPH           = NO
+GRAPHICAL_HIERARCHY    = YES
+DIRECTORY_GRAPH        = YES
+
+#---------------------------------------------------------------------------
+# Dot Configuration
+#---------------------------------------------------------------------------
+
+DOT_IMAGE_FORMAT       = svg
+INTERACTIVE_SVG        = YES
+DOT_PATH               = 
+DOTFILE_DIRS           = 
+MSCFILE_DIRS           = 
+DIAFILE_DIRS           = 
+
+MAX_DOT_GRAPH_DEPTH    = 0
+MAX_DOT_GRAPH_ISAY     = 1000
+
+DOT_GRAPH_MAX_NODES    = 50
+DOT_TRANSPARENT        = NO
+DOT_MULTIPLE_TARGETS   = NO
+GENERATE_LEGEND        = YES
+DOT_CLEANUP            = YES
+
+#---------------------------------------------------------------------------
+# Mathematical Formulas
+#---------------------------------------------------------------------------
+
+USE_MATHJAX            = YES
+MATHJAX_RELPATH        = https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/
+MATHJAX_EXTENSIONS     = TeX/AMSmath,TeX/AMSsymbols
+MATHJAX_CODEFILE       = 
+
+#---------------------------------------------------------------------------
+# Include and Macro Expansion
+#---------------------------------------------------------------------------
+
+INCLUDE_PATH           = 
+INCLUDE_FILE_PATTERNS  = 
+MACRO_EXPANSION        = NO
+EXPAND_ONLY_PREDEF     = NO
+PREDEFINED             = DOXYGEN_SHOULD_SKIP_THIS
+
+#---------------------------------------------------------------------------
+# Build-Related Options
+#---------------------------------------------------------------------------
+
+TAGFILES               = 
+GENERATE_TAGFILE       = 
+CLANG_ASSISTED_PARSING = NO
+CLANG_ADD_INC_PATHS    = YES
+CLANG_OPTIONS          = 
+
+#---------------------------------------------------------------------------
+# Processing Options
+#---------------------------------------------------------------------------
+
+QUIET                  = NO
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_LACKED     = NO
+WARN_NO_PARAMDOC       = NO
+WARN_AS_ERROR          = NO
+WARN_FORMAT            = "$file:$line: $text"
+WARN_LOGFILE           = 
+
+#---------------------------------------------------------------------------
+# Input Filtering
+#---------------------------------------------------------------------------
+
+FILTER_PATTERNS        = 
+FILTER_SOURCE_FILES    = NO
+FILTER_SOURCE_PATTERNS = 
+
+USE_MDFILE_AS_MAINPAGE = README.md
+
+#---------------------------------------------------------------------------
+# Configuration File Encoding
+#---------------------------------------------------------------------------
+
+INPUT_ENCODING         = UTF-8
+
+#---------------------------------------------------------------------------
+# Sorting
+#---------------------------------------------------------------------------
+
+SORT_MEMBER_DOCS       = YES
+SORT_BRIEF_DOCS        = NO
+SORT_MEMBERS_CTORS_1ST = NO
+SORT_GROUP_NAMES       = NO
+SORT_BY_SCOPE_NAME     = NO
+
+#---------------------------------------------------------------------------
+# Header and Footer Files
+#---------------------------------------------------------------------------
+
+HTML_HEADER            = 
+HTML_FOOTER            = 
+
+#---------------------------------------------------------------------------
+# Enable Specific Features
+#---------------------------------------------------------------------------
+
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = YES
+EXPAND_ONLY_PREDEF     = NO
+SKIP_FUNCTION_MACROS   = YES
+
+#---------------------------------------------------------------------------
+# Custom Sections
+#---------------------------------------------------------------------------
+
+# Custom tags for categories
+ALIASES                = \
+    "note=\xrefitem note \"Note\" \"Notes\"" \
+    "warning=\xrefitem warning \"Warning\" \"Warnings\"" \
+    "bug=\xrefitem bug \"Bug\" \"Bugs\"" \
+    "deprecated=\xrefitem deprecated \"Deprecated\" \"Deprecated Items\"" \
+    "implementation=\xrefitem implementation \"Implementation Detail\" \"Implementation Details\"" \
+    "performance=\xrefitem performance \"Performance Note\" \"Performance Notes\""
+
+#---------------------------------------------------------------------------
+# Additional Configuration
+#---------------------------------------------------------------------------
+
+STRIP_CODE_COMMENTS    = NO
+NUM_PROC_THREADS       = 4
