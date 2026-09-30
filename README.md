@@ -495,7 +495,7 @@ If you use this code in your research, please cite the associated paper (details
 @article{rispo2026weaklyhard,
   author  = {Rispo, Veronica and Aromolo, Federico and Casini, Daniel and Biondi, Alessandro},
   title   = {Blocking-Aware Weakly-Hard Schedulability Analysis under Sporadic Interference},
-  journal = {IEEE Transactions on Computers},
+  journal = {},
   year    = {2026},
   note    = {Under review}
 }
