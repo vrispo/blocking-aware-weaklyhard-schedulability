@@ -190,7 +190,7 @@ Configuration files are JSON-based with three main sections:
 ```json
 {
     "generation": {
-        "force_last_unsched": true,        // Force last task to be unschedulable
+        "force_last_unsched": true,        // Force tasksets with N_mk not hard real-time schedulable tasks that will be the weakly-hard ones
         "N": 5,                            // Number of tasks
         "N_mk": 1,                         // Number of tasks with (m,k) constraints
         "U": 0.94,                         // Total utilization (0.0 - 1.0)
